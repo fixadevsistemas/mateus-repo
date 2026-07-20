@@ -17,7 +17,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_originals")
-ASSETS = os.path.join(ROOT, "assets")
+ASSETS = os.path.join(ROOT, "public", "assets")
 BASE = os.path.join(SRC, "fotoperfil.png")
 ROBO = os.path.join(SRC, "fotoperfil_robo.png")
 

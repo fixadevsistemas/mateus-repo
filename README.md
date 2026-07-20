@@ -11,21 +11,23 @@ Site institucional/portfólio de serviços (Analista de TI & Desenvolvedor Full-
 
 ```
 mateus-oliveira-portfolio/
-├── index.html          # Página (uma só)
-├── style.css           # Estilos
-├── script.js           # Interações (partículas, quebra-cabeça, reveal robótico…)
-├── assets/             # ⬆️ SUBIR no deploy (~300 KB)
-│   ├── fotoperfil.webp        # Foto do hero (49 KB)
-│   ├── fotoperfil_robo.webp   # Versão IA revelada no hover (156 KB)
-│   ├── og-image.jpg           # Imagem de compartilhamento (1200×630)
-│   └── favicon.svg            # Ícone da aba
-├── _originals/         # 🚫 NÃO SUBIR — backup dos PNGs originais (~11 MB)
+├── public/             # ⬆️ ISTO é o site publicado (Cloudflare serve só esta pasta)
+│   ├── index.html          # Página (uma só)
+│   ├── style.css           # Estilos
+│   ├── script.js           # Interações (partículas, quebra-cabeça, reveal robótico…)
+│   └── assets/
+│       ├── fotoperfil.webp        # Foto do hero (49 KB)
+│       ├── fotoperfil_robo.webp   # Versão IA revelada no hover (156 KB)
+│       ├── og-image.jpg           # Imagem de compartilhamento (1200×630)
+│       └── favicon.svg            # Ícone da aba
+├── wrangler.jsonc      # Config do deploy (aponta para public/)
 ├── tools/
 │   └── optimize-images.py     # Reprocessa as imagens (ver "Manutenção")
+├── _originals/         # 🚫 backup dos PNGs originais (ignorado pelo Git)
 └── README.md
 ```
 
-> ⚠️ **Deploy:** suba a **raiz** do projeto, mas **exclua a pasta `_originals/`** (é só backup pesado).
+> ✅ **Deploy (Cloudflare):** o `wrangler.jsonc` publica **somente a pasta `public/`** — assim `.git`, `README.md` e `tools/` **nunca** ficam acessíveis publicamente.
 
 ---
 
