@@ -1,0 +1,8 @@
+{
+  // Configuração para servir o site como assets estáticos no Cloudflare Workers.
+  "name": "mateus-repo",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./"
+  }
+}
