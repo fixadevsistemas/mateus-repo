@@ -1,0 +1,10 @@
+# Backup dos originais pesados (NÃO deployar)
+_originals/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.vscode/
+.idea/

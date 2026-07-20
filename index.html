@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mateus Oliveira — Analista de TI e Desenvolvedor Full-Stack em Natal/RN. Sites, landing pages, dashboards corporativos, automação de processos e chatbots de atendimento." />
+  <meta name="author" content="Mateus Oliveira" />
+  <meta name="theme-color" content="#09070f" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://mateusoliveira.fixadev.com.br/" />
+
+  <meta property="og:title" content="Mateus Oliveira — Tecnologia, Desenvolvimento & Automação" />
+  <meta property="og:description" content="+10 anos em tecnologia. Sites, landing pages, dashboards corporativos, automação de processos e chatbots de atendimento." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mateusoliveira.fixadev.com.br/" />
+  <meta property="og:site_name" content="Mateus Oliveira" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://mateusoliveira.fixadev.com.br/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mateus Oliveira — Analista de TI & Desenvolvedor Full-Stack" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mateus Oliveira — Tecnologia, Desenvolvimento & Automação" />
+  <meta name="twitter:description" content="Sites, landing pages, dashboards corporativos, automação de processos e chatbots de atendimento." />
+  <meta name="twitter:image" content="https://mateusoliveira.fixadev.com.br/assets/og-image.jpg" />
+
+  <title>Mateus Oliveira · Tecnologia, Desenvolvimento & Automação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Interactive layers -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Início">
+        <span class="nav__logo-mark">&lt;/&gt;</span>
+        <span class="nav__logo-text">Mateus<span class="accent">.dev</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#para-quem">Para quem</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato" class="nav__cta">Solicitar orçamento</a>
+      </nav>
+
+      <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre">Sobre</a>
+    <a href="#para-quem">Para quem</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Solicitar orçamento</a>
+  </div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__content">
+          <div class="hero__top reveal" data-reveal>
+            <span class="pill pill--status"><span class="status-dot"></span>ÚLTIMAS VAGAS</span>
+            <span class="pill__meta">Consulte a disponibilidade para o seu projeto</span>
+          </div>
+
+          <p class="hero__meta reveal" data-reveal data-delay="1">
+            NATAL · RN — ATENDIMENTO REMOTO, BRASIL E EXTERIOR
+          </p>
+
+          <h1 class="hero__title reveal" data-reveal data-delay="2">
+            Sites, sistemas e automações para tirar a
+            <span class="hand">ideia</span> da sua empresa <span class="accent-text">do papel.</span>
+          </h1>
+
+          <p class="hero__desc reveal" data-reveal data-delay="3">
+            Analista de TI e Desenvolvedor Full-Stack com <strong>+10 anos</strong> em tecnologia. Do site à
+            automação, entrego a solução que a sua empresa precisa.
+          </p>
+
+          <div class="hero__actions reveal" data-reveal data-delay="4">
+            <a href="#contato" class="btn btn--primary">
+              Verificar disponibilidade
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+          </div>
+
+          <p class="hero__scarcity reveal" data-reveal data-delay="5">
+            <span class="status-dot"></span> Atendo poucos projetos por vez para garantir qualidade — restam poucas vagas.
+          </p>
+
+          <div class="hero__chips reveal" data-reveal data-delay="6">
+            <span class="chip">+10 anos de experiência</span>
+            <span class="chip">Analista de TI · Full-Stack</span>
+            <span class="chip">Remoto · Brasil</span>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="portrait" data-reveal-robo>
+            <img src="assets/fotoperfil.webp" width="768" height="1194" alt="Mateus Oliveira, Analista de TI e Desenvolvedor Full-Stack" class="portrait__img" />
+            <img data-src="assets/fotoperfil_robo.webp" alt="" aria-hidden="true" class="portrait__robo" />
+            <span class="portrait__hint-reveal">✦ revele a versão IA</span>
+          </div>
+          <div class="hero__id reveal" data-reveal data-delay="2">
+            <strong>Mateus Oliveira</strong>
+            <span>Analista de TI · Dev Full-Stack · Natal/RN</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack marquee -->
+      <div class="stack-marquee" aria-hidden="true">
+        <div class="stack-marquee__track">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
+          <span>Node.js</span><span>SQL</span><span>Power BI</span><span>Microsoft 365</span><span>Entra ID</span>
+          <span>n8n</span><span>Automação</span><span>APIs REST</span><span>Git</span>
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
+          <span>Node.js</span><span>SQL</span><span>Power BI</span><span>Microsoft 365</span><span>Entra ID</span>
+          <span>n8n</span><span>Automação</span><span>APIs REST</span><span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="wrap">
+        <div class="sec-head reveal" data-reveal>
+          <span class="sec-mark">§ 01</span>
+          <span class="sec-label">Sobre</span>
+        </div>
+        <h2 class="sec-title reveal" data-reveal data-delay="1">Quem vai construir sua <span class="accent-text">solução</span></h2>
+
+        <div class="about">
+          <aside class="about__panel reveal" data-reveal data-delay="2">
+            <div class="panel-row"><span>Atuação</span><strong>Analista de TI · Full-Stack</strong></div>
+            <div class="panel-row"><span>Local</span><strong>Natal, RN · Brasil</strong></div>
+            <div class="panel-row"><span>Atendimento</span><strong>Remoto, Brasil e exterior</strong></div>
+            <div class="panel-row"><span>Experiência</span><strong>+10 anos em tecnologia</strong></div>
+            <div class="panel-row"><span>Stack principal</span><strong>Full-Stack · Dados · Infra</strong></div>
+            <div class="panel-row"><span>Agenda 2026</span><strong class="mint">● Poucas vagas</strong></div>
+          </aside>
+
+          <div class="about__main reveal" data-reveal data-delay="3">
+            <p>
+              Com <strong>+10 anos em tecnologia</strong>, uno <strong>infraestrutura</strong>, <strong>dados</strong>
+              e <strong>desenvolvimento</strong> para transformar uma necessidade do seu negócio em uma solução que
+              funciona de verdade.
+            </p>
+            <p>
+              Crio <strong>sites</strong>, <strong>landing pages</strong>, <strong>dashboards corporativos</strong>,
+              <strong>automação de processos</strong> e <strong>chatbots de atendimento</strong>. Não vendo “horas de
+              código”: entrego a <strong>solução</strong> que resolve o problema que trouxe você até aqui — com escopo,
+              prazo e clareza.
+            </p>
+
+            <a href="#contato" class="btn btn--ghost btn--sm">
+              Falar comigo no WhatsApp
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat reveal" data-reveal>
+            <span class="stat__num" data-count="10">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Anos em tecnologia</span>
+          </div>
+          <div class="stat reveal" data-reveal data-delay="1">
+            <span class="stat__num" data-count="6">0</span><span class="stat__suffix"></span>
+            <span class="stat__label">Serviços sob demanda</span>
+          </div>
+          <div class="stat reveal" data-reveal data-delay="2">
+            <span class="stat__num" data-count="23">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Projetos entregues</span>
+          </div>
+          <div class="stat reveal" data-reveal data-delay="3">
+            <span class="stat__num" data-count="100">0</span><span class="stat__suffix">%</span>
+            <span class="stat__label">Foco em resultado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARA QUEM É ===================== -->
+    <section class="section" id="para-quem">
+      <div class="wrap">
+        <div class="sec-head reveal" data-reveal>
+          <span class="sec-mark">§ 02</span>
+          <span class="sec-label">Para quem é</span>
+        </div>
+        <h2 class="sec-title reveal" data-reveal data-delay="1">Antes de me chamar, confira se faz sentido</h2>
+        <p class="sec-sub reveal" data-reveal data-delay="2">Isso poupa o seu tempo e o meu — e deixa o projeto começar já no caminho certo.</p>
+
+        <div class="fit">
+          <div class="fit__col fit__col--yes reveal" data-reveal>
+            <h3><span class="fit__icon">✓</span> Fale comigo se você</h3>
+            <ul>
+              <li>Precisa de um site, landing page ou sistema web sob medida</li>
+              <li>Quer automatizar processos ou o atendimento (chatbot) da empresa</li>
+              <li>Precisa de dashboards para enxergar seus dados e decidir melhor</li>
+              <li>Busca apoio em infraestrutura, redes ou Microsoft 365 &amp; Entra ID</li>
+              <li>Quer um profissional com combinado, prazo e entrega claros</li>
+            </ul>
+          </div>
+          <div class="fit__col fit__col--no reveal" data-reveal data-delay="2">
+            <h3><span class="fit__icon fit__icon--no">✕</span> Este site não é para</h3>
+            <ul>
+              <li>Cursos, mentorias ou aulas de programação</li>
+              <li>Orientação de carreira ou “como entrar na área de TI”</li>
+              <li>Trabalhos sem escopo, prazo ou combinado definido</li>
+              <li>Qualquer demanda que exija prática antiética ou ilegal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="section" id="servicos">
+      <div class="wrap">
+        <div class="sec-head reveal" data-reveal>
+          <span class="sec-mark">§ 03</span>
+          <span class="sec-label">Serviços</span>
+        </div>
+        <h2 class="sec-title reveal" data-reveal data-delay="1">O que sua empresa <span class="hand">recebe</span> ao me contratar</h2>
+        <p class="sec-sub reveal" data-reveal data-delay="2">Do primeiro rascunho à entrega em produção — cobrindo o ciclo completo.</p>
+
+        <div class="services">
+          <article class="service reveal" data-reveal>
+            <div class="service__idx">01 / 06</div>
+            <h3>Sites &amp; Landing Pages</h3>
+            <p>Sites institucionais e landing pages rápidas, responsivas e pensadas para <strong>converter</strong> visitantes em clientes.</p>
+          </article>
+          <article class="service reveal" data-reveal data-delay="1">
+            <div class="service__idx">02 / 06</div>
+            <h3>Dashboards Corporativos</h3>
+            <p>Painéis que transformam dados dispersos em <strong>indicadores claros</strong> e decisões em tempo real.</p>
+          </article>
+          <article class="service reveal" data-reveal data-delay="2">
+            <div class="service__idx">03 / 06</div>
+            <h3>Automação de Processos</h3>
+            <p>Elimino tarefas repetitivas integrando <strong>sistemas, planilhas e APIs</strong> — mais eficiência, menos erro manual.</p>
+          </article>
+          <article class="service reveal" data-reveal data-delay="3">
+            <div class="service__idx">04 / 06</div>
+            <h3>Chatbots de Atendimento</h3>
+            <p>Automação de atendimento com <strong>chatbots</strong> que respondem, qualificam e encaminham — 24 horas por dia.</p>
+          </article>
+          <article class="service reveal" data-reveal data-delay="4">
+            <div class="service__idx">05 / 06</div>
+            <h3>Infraestrutura &amp; TI</h3>
+            <p>Gestão de infraestrutura, redes, <strong>Microsoft 365 &amp; Entra ID</strong> e suporte para manter tudo no ar.</p>
+          </article>
+          <article class="service reveal" data-reveal data-delay="5">
+            <div class="service__idx">06 / 06</div>
+            <h3>Sistemas sob Medida</h3>
+            <p>Aplicações web internas conectadas a <strong>ERP e bancos de dados</strong> para otimizar a sua operação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section section--contact" id="contato">
+      <div class="wrap">
+        <div class="contact reveal" data-reveal>
+          <span class="sec-mark">§ 04 — Contato</span>
+          <h2 class="contact__title">Vamos tirar a sua <span class="hand">ideia</span> <span class="accent-text">do papel?</span></h2>
+          <p class="contact__sub">
+            Reservo <strong>poucas vagas por mês</strong> para manter a qualidade das entregas. Me conte o que você
+            precisa e eu retorno rápido com a disponibilidade e os próximos passos.
+          </p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="https://wa.me/5584981621255?text=Ol%C3%A1%20Mateus%2C%20vi%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5H8c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+              Orçamento no WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="mailto:mateus.olivier6@gmail.com">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Enviar e-mail
+            </a>
+          </div>
+
+          <div class="contact__links">
+            <a href="mailto:mateus.olivier6@gmail.com">mateus.olivier6@gmail.com</a>
+            <span class="sep">·</span>
+            <a href="tel:+5584981621255">(84) 98162-1255</a>
+            <span class="sep">·</span>
+            <a href="https://www.linkedin.com/in/mateuss-oli/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__logo">Mateus<span class="accent">.dev</span></span>
+      <p>© <span id="year"></span> Mateus Oliveira · Natal/RN — Tecnologia, desenvolvimento &amp; automação.</p>
+      <a href="#hero" class="footer__top" aria-label="Voltar ao topo">↑ Topo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
